@@ -3,6 +3,7 @@
 import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
+sys.path.append('/tmp/')
 from geektool import address
 from geektool import city
 import urllib

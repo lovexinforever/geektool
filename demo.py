@@ -2,6 +2,7 @@
 #-*- coding: UTF-8 -*-  
 import sys
 reload(sys)
+import os
 sys.setdefaultencoding('utf-8')
 sys.path.append('/Users/dingyang/python/')
 import requests
@@ -34,5 +35,8 @@ if __name__ == '__main__':
 	for chunk in res.iter_content(100000):
 		playFile.write(chunk)
 	playFile.close()
+	os.system('rm -rf /tmp/geektool-master')
+	os.system('rm -rf /tmp/geektool')
 	unzip_file('/tmp/geektool.zip', '/tmp')
+	
 	shutil.move('/tmp/geektool-master', '/tmp/geektool')

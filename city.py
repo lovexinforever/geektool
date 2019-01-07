@@ -4,7 +4,7 @@ import json
 import sys
 
 def queryCode(key):
-    f = open("/Users/dingyang/python/geektool/city.json")
+    f = open("/tmp/geektool/city.json")
     origin = json.load(f);
     if(key in origin):
         # 获取城市编码

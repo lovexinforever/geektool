@@ -3,7 +3,7 @@
 import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
-sys.path.append('/Users/dingyang/python/')
+sys.path.append('/tmp/')
 from geektool import address
 from geektool import city
 from geektool import icon
