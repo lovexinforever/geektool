@@ -27,6 +27,8 @@ def getUrl(des):
 		  url="https://raw.githubusercontent.com/lovexinforever/blog_back_up/master/blog_photos/霾.png";
     elif "雨夹冰雹" == des:
 		  url="https://raw.githubusercontent.com/lovexinforever/blog_back_up/master/blog_photos/雨夹冰雹.png";
+    elif "雨或雪" == des or "雨夹雪" == des:
+		  url="https://raw.githubusercontent.com/lovexinforever/blog_back_up/master/blog_photos/雨夹雪.png";
     else:
 		url='https://raw.githubusercontent.com/lovexinforever/blog_back_up/master/blog_photos/20101027235020136.png';
     return url
