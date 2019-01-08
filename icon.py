@@ -12,5 +12,4 @@ def queryIcon(key):
     # 如果获取不到,直接给默认
     else:
         icon = "https://raw.githubusercontent.com/lovexinforever/blog_back_up/master/blog_photos/20101027235020136.png"
-    print(icon)
     return icon;
