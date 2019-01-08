@@ -25,5 +25,5 @@ def getDes():
     fives=soupFive.find_all('tr',attrs={'class':'clickable'});
     tagToday=fives[1].find('td',attrs={'class':'description'});
         
-    urllib.urlretrieve(icon.getUrl(tagToday.get_text()), '/tmp/fiveOne.png')
+    urllib.urlretrieve(icon.queryIcon(tagToday.get_text()), '/tmp/fiveOne.png')
     return tagToday.get_text();

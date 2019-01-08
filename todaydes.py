@@ -18,5 +18,5 @@ def getDes():
     respFive=urllib.urlopen(url);
     soup=BeautifulSoup(respFive,'html.parser');
     tagToday=soup.find('div',attrs={'class':'today_nowcard-phrase'})
-    urllib.urlretrieve(icon.getUrl(tagToday.get_text()), '/tmp/weather.png')
+    urllib.urlretrieve(icon.queryIcon(tagToday.get_text()), '/tmp/weather.png')
     return tagToday.get_text()
